@@ -43,21 +43,48 @@ import com.nlp.umlextractor.model.Parameter;
 import com.nlp.umlextractor.staticdata.StaticData;
 import com.util.FileOperator;
 
+/**
+ * writes the contents to structured XML format
+ * 
+ * 
+ * @author SRatnavel
+ * @since 1.0
+ * @version 1.0
+ */
 public class XMLWriter
 {
 
-  public static HashMap<String, String> keyIDMap = new HashMap<>();
-
-  public static String fileName = "";
-
-  public String type = "UMLDiagram";
+  private String type;
 
   private static int attrId = 1;
 
   private static int methodId = 1;
 
   private int count = 0;
-  
+
+  private static HashMap<String, String> keyIDMap = new HashMap<>();
+
+  public XMLWriter(String fileType)
+  {
+    if (fileType.equals(""))
+    {
+      throw new IllegalArgumentException("The file type or artefact type must not be empty");
+    }
+    this.type = fileType;
+  }
+
+  public XMLWriter()
+  {
+    this("UMLDiagram");
+  }
+
+  /**
+   * convert the contents into XML structured format
+   * 
+   * @param fileDir, where we want to save the contents
+   * @throws TransformerException
+   * @throws ParserConfigurationException
+   */
   public void createXML(String fileDir) throws TransformerException, ParserConfigurationException
   {
     List<ModelData> classLst = StaticData.classLst;
@@ -67,7 +94,6 @@ public class XMLWriter
     Element artifact = doc.createElement(ARTEFACT_ROOT);
     doc.appendChild(rootElement);
     rootElement.appendChild(artifact);
-
 
     setAttribute(doc, type, artifact, TYPE_ROOT);
     for (int i = 0; i < classLst.size(); i++)
@@ -82,8 +108,8 @@ public class XMLWriter
 
       setAttribute(doc, tempData.getName(), artifactElement, NAME_ROOT);
       setAttribute(doc, tempData.getType(), artifactElement, TYPE_ROOT);
-      
-      setAttribute(doc,id , artifactElement, ID_ROOT);
+
+      setAttribute(doc, id, artifactElement, ID_ROOT);
       keyIDMap.put(tempData.getId(), id);
 
       createAttributeElement(doc, artifactElement, tempData);
@@ -92,8 +118,7 @@ public class XMLWriter
 
     Element intraConnectionElement = doc.createElement(INTRACONNECTION_ROOT);
     artifact.appendChild(intraConnectionElement);
-   
-    
+
     System.out.println("------Writing  XML to directory : " + fileDir + " ------");
 
     FileOperator.writeToXML(new File(fileDir).getPath(), doc);
@@ -103,17 +128,9 @@ public class XMLWriter
   {
     DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
     DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-    
+
     Document doc = docBuilder.newDocument();
     return doc;
-  }
-
-  private String getFileDir()
-  {
-    String dir = System.getProperty("user.home") + File.separator + "RequirementArtefactFile.xml";//default
-    
-    System.out.println("------Writing Requirement XML -- XML folder path is returned--:  " + dir);
-    return dir;
   }
 
   private String getDesignElementID()
@@ -138,10 +155,6 @@ public class XMLWriter
     }
     return ID;
   }
-
-
-
-
 
   private void createAttributeElement(Document doc, Element artifactElement, ModelData tempData)
   {
@@ -185,6 +198,7 @@ public class XMLWriter
     }
 
   }
+
   private String getAttributeID()
   {
     String ID;
@@ -206,7 +220,7 @@ public class XMLWriter
     attrId++;
     return ID;
   }
-  
+
   private String getMethodID()
   {
     String ID;
@@ -227,6 +241,7 @@ public class XMLWriter
     methodId++;
     return ID;
   }
+
   private String getParamString(List<Parameter> paramList, String parameterString)
   {
     for (int j = 0; paramList != null && j < paramList.size(); j++)
