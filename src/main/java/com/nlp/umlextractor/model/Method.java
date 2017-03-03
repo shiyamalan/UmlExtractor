@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author shiyam
  */
-public class Operation extends Property{
+public class Method extends Property{
     
     private boolean isAbstract;
     private String returnType;
