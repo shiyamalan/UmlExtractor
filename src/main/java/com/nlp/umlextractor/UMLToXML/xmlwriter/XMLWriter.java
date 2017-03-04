@@ -190,7 +190,7 @@ public class XMLWriter
 
       List<Parameter> paramList = method.getParameterList();
       String tempString = method.getParamString();
-      if (tempString.equals(""))
+      if (tempString == null || tempString.equals(""))
       {
         parameterString = getParamString(paramList, parameterString);
       }
@@ -264,6 +264,7 @@ public class XMLWriter
     return attrName;
   }
 
+  @SuppressWarnings("unused")
   private void createConnectionElement(Document doc, Element intraConnectionElement)
   {
 
