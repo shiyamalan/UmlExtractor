@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Artefacts>
+  <Artefact type="UMLDiagram">
+    <ArtefactElement id="D1" name="Account" type="Class">
+      <ArtefactSubElement id="D1_F1" name="accountNumber" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D1_F2" name="accountBalance" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D1_F3" name="accountHolder" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D1_M1" name="Account" parameters="com.nlp.umlextractor.model.Parameter@5e8fee26, com.nlp.umlextractor.model.Parameter@3b5c314a, com.nlp.umlextractor.model.Parameter@21a80fb8" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M2" name="Account" parameters="" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M3" name="getAccountNumber" parameters="com.nlp.umlextractor.model.Parameter@20a00a4b" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M4" name="setAccountNumber" parameters="com.nlp.umlextractor.model.Parameter@6b03d2a8, com.nlp.umlextractor.model.Parameter@47fb4a7b" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M5" name="getAccountBalance" parameters="com.nlp.umlextractor.model.Parameter@42d6f628" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M6" name="setAccountBalance" parameters="com.nlp.umlextractor.model.Parameter@2ebade60, com.nlp.umlextractor.model.Parameter@6e5d8897" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M7" name="getAccountHolder" parameters="com.nlp.umlextractor.model.Parameter@3eb2aa1c" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M8" name="setAccountHolder" parameters="com.nlp.umlextractor.model.Parameter@43be346c, com.nlp.umlextractor.model.Parameter@7c63c132" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M9" name="printDetails" parameters="com.nlp.umlextractor.model.Parameter@7920f96a" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D1_M10" name="withdraw" parameters="com.nlp.umlextractor.model.Parameter@63d6dc46, com.nlp.umlextractor.model.Parameter@2f17aadf" returnType="" status="" type="UMLOperation" visibility="public"/>
+    </ArtefactElement>
+    <ArtefactElement id="D2" name="SavingsAccount" type="Class">
+      <ArtefactSubElement id="D2_F1" name="interestRate" type="UMLAttribute" variableType="Double" visibility="private"/>
+      <ArtefactSubElement id="D2_F2" name="withdrawalFee" type="UMLAttribute" variableType="Double" visibility="private"/>
+      <ArtefactSubElement id="D2_M1" name="SavingsAccount" parameters="" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M2" name="SavingsAccount" parameters="com.nlp.umlextractor.model.Parameter@3ad32ea0, com.nlp.umlextractor.model.Parameter@7e9a288b" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M3" name="getInterestRate" parameters="com.nlp.umlextractor.model.Parameter@3adbfe9c" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M4" name="setInterestRate" parameters="com.nlp.umlextractor.model.Parameter@4128d1f4, com.nlp.umlextractor.model.Parameter@5ef00b97" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M5" name="getWithdrawalFee" parameters="com.nlp.umlextractor.model.Parameter@61891732" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M6" name="setWithdrawalFee" parameters="com.nlp.umlextractor.model.Parameter@6f5205a4, com.nlp.umlextractor.model.Parameter@71f08b14" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M7" name="printDetails" parameters="com.nlp.umlextractor.model.Parameter@673b087c" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D2_M8" name="withdraw" parameters="com.nlp.umlextractor.model.Parameter@54aa39d6, com.nlp.umlextractor.model.Parameter@73bb3c06" returnType="" status="" type="UMLOperation" visibility="public"/>
+    </ArtefactElement>
+    <ArtefactElement id="D3" name="CurrentAccount" type="Class">
+      <ArtefactSubElement id="D3_F1" name="overdraft" type="UMLAttribute" variableType="Double" visibility="private"/>
+      <ArtefactSubElement id="D3_M1" name="CurrentAccount" parameters="" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D3_M2" name="CurrentAccount" parameters="com.nlp.umlextractor.model.Parameter@961e946" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D3_M3" name="getOverdraft" parameters="com.nlp.umlextractor.model.Parameter@7b19f779" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D3_M4" name="setOverdraft" parameters="com.nlp.umlextractor.model.Parameter@65c66812, com.nlp.umlextractor.model.Parameter@44daa9f1" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D3_M5" name="printDetails" parameters="com.nlp.umlextractor.model.Parameter@6fcb3087" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D3_M6" name="withdraw" parameters="com.nlp.umlextractor.model.Parameter@4df2868, com.nlp.umlextractor.model.Parameter@56d5c657" returnType="" status="" type="UMLOperation" visibility="public"/>
+    </ArtefactElement>
+    <ArtefactElement id="D4" name="Customer" type="Class">
+      <ArtefactSubElement id="D4_F1" name="name" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D4_F2" name="dob" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D4_F3" name="address" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D4_F4" name="telNo" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D4_M1" name="Customer" parameters="" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M2" name="Customer" parameters="com.nlp.umlextractor.model.Parameter@6cd0a64a, com.nlp.umlextractor.model.Parameter@76557c15, com.nlp.umlextractor.model.Parameter@66458364, com.nlp.umlextractor.model.Parameter@5db54eb0" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M3" name="getName" parameters="com.nlp.umlextractor.model.Parameter@2a4134e0" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M4" name="setName" parameters="com.nlp.umlextractor.model.Parameter@1ef673cc, com.nlp.umlextractor.model.Parameter@462c65f5" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M5" name="getDob" parameters="com.nlp.umlextractor.model.Parameter@cd9dbd1" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M6" name="setDob" parameters="com.nlp.umlextractor.model.Parameter@32ee7cee, com.nlp.umlextractor.model.Parameter@474c0761" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M7" name="getAddress" parameters="com.nlp.umlextractor.model.Parameter@507895d8" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M8" name="setAddress" parameters="com.nlp.umlextractor.model.Parameter@1cb5c12e, com.nlp.umlextractor.model.Parameter@609dc1bb" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M9" name="getTelNo" parameters="com.nlp.umlextractor.model.Parameter@151a0d8b" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M10" name="setTelNo" parameters="com.nlp.umlextractor.model.Parameter@616f2b7f, com.nlp.umlextractor.model.Parameter@4990d0d2" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M11" name="getAccount" parameters="com.nlp.umlextractor.model.Parameter@427db0b9" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M12" name="setAccount" parameters="com.nlp.umlextractor.model.Parameter@49dd63c9, com.nlp.umlextractor.model.Parameter@65c24701" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D4_M13" name="printDetails" parameters="com.nlp.umlextractor.model.Parameter@35c3c6d8" returnType="" status="" type="UMLOperation" visibility="public"/>
+    </ArtefactElement>
+    <ArtefactElement id="D5" name="Branch" type="Class">
+      <ArtefactSubElement id="D5_F1" name="name" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D5_F2" name="ceo" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D5_F3" name="sortCode" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D5_F4" name="telNo" type="UMLAttribute" variableType="String" visibility="private"/>
+      <ArtefactSubElement id="D5_M1" name="Bank" parameters="" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M2" name="Bank" parameters="com.nlp.umlextractor.model.Parameter@4833aa7b" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M3" name="getName" parameters="com.nlp.umlextractor.model.Parameter@37fd9645" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M4" name="setName" parameters="com.nlp.umlextractor.model.Parameter@6994a8ba, com.nlp.umlextractor.model.Parameter@1ed1817d" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M5" name="getCeo" parameters="com.nlp.umlextractor.model.Parameter@4c8c4559" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M6" name="setCeo" parameters="com.nlp.umlextractor.model.Parameter@d1cfd52, com.nlp.umlextractor.model.Parameter@6a3b1937" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M7" name="getSortcode" parameters="com.nlp.umlextractor.model.Parameter@4df4a05d" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M8" name="setSortCode" parameters="com.nlp.umlextractor.model.Parameter@774c61a6, com.nlp.umlextractor.model.Parameter@379f167a" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M9" name="getTelNo" parameters="com.nlp.umlextractor.model.Parameter@2d7cc01d" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M10" name="setTelNo" parameters="com.nlp.umlextractor.model.Parameter@5928c73f" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M11" name="getCustomer" parameters="com.nlp.umlextractor.model.Parameter@43126d4" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M12" name="setCustomer" parameters="com.nlp.umlextractor.model.Parameter@36ec2a72, com.nlp.umlextractor.model.Parameter@4ad6be89" returnType="" status="" type="UMLOperation" visibility="public"/>
+      <ArtefactSubElement id="D5_M13" name="printDetails" parameters="com.nlp.umlextractor.model.Parameter@58773ac1" returnType="" status="" type="UMLOperation" visibility="public"/>
+    </ArtefactElement>
+    <IntraConnections/>
+  </Artefact>
+</Artefacts>
