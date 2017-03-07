@@ -17,8 +17,8 @@ import com.nlp.umlextractor.model.InterfaceData;
 import com.nlp.umlextractor.model.Method;
 import com.nlp.umlextractor.model.ModelData;
 import com.nlp.umlextractor.model.Parameter;
-import com.nlp.umlextractor.staticdata.StaticData;
 import com.util.Reader;
+import com.util.StaticData;
 
 /**
  * Read the content from .mdj file, which comes from star UML and put the

@@ -1,27 +1,6 @@
 
 package com.nlp.umlextractor.UMLToXML.xmlwriter;
 
-import static com.nlp.umlextractor.staticdata.StaticData.ANNOTATION_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ARTEFACTELEMENT_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ARTEFACTS_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ARTEFACTUBELEMENT_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ARTEFACT_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.CONNECTION_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ENDPOINT_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.ID_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.INTRACONNECTION_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.MULTIPLICITY_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.NAME_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.PARAMETER_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.RETURN_TYPE_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.STARTPOINT_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.STATUS;
-import static com.nlp.umlextractor.staticdata.StaticData.TYPE_CONNECTION_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.TYPE_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.VARIABLE_TYPE_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.VISIBILITY_ROOT;
-import static com.nlp.umlextractor.staticdata.StaticData.depencyList;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
@@ -40,8 +19,10 @@ import com.nlp.umlextractor.model.Dependencies;
 import com.nlp.umlextractor.model.Method;
 import com.nlp.umlextractor.model.ModelData;
 import com.nlp.umlextractor.model.Parameter;
-import com.nlp.umlextractor.staticdata.StaticData;
 import com.util.FileOperator;
+import com.util.StaticData;
+
+import static com.util.StaticData.*;
 
 /**
  * writes the contents to structured XML format
